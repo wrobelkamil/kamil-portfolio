@@ -5,12 +5,24 @@ import 'react-image-gallery/styles/css/image-gallery.css';
 const Gallery = () => {
   const images = [
     {
-      original: 'https://picsum.photos/id/1018/1000/600/',
-      thumbnail: 'https://picsum.photos/id/1018/250/150/',
+      original: "/gallery/1.png",
+      thumbnail: "/gallery/1.png",
     },
     {
-      original: 'https://picsum.photos/id/1015/1000/600/',
-      thumbnail: 'https://picsum.photos/id/1015/1000/600/',
+      original: "/gallery/2.png",
+      thumbnail: "/gallery/2.png",
+    },
+    {
+      original: "/gallery/3.png",
+      thumbnail: "/gallery/3.png",
+    },
+    {
+      original: "/gallery/4.png",
+      thumbnail: "/gallery/4.png",
+    },
+    {
+      original: "/gallery/5.png",
+      thumbnail: "/gallery/5.png",
     },
     // Dodaj więcej zdjęć tutaj
   ];

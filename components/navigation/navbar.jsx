@@ -1,11 +1,16 @@
-import styles from "../../styles/Navbar.module.css";
+import React from 'react';
+import styles from '../../styles/Navbar.module.css';
 
-export default function Navbar() {
-  return (
-    <nav className={styles.navbar}>
-      <a href="https://www.linkedin.com/in/kamil-wróbel-28932923a/" target="_blank" rel="noopener noreferrer">
-        <img className={styles.alchemy_logo} src="/Linkedin_logo.svg" alt="LinkedIn"></img>
-      </a>
-    </nav>
-  );
+const Navbar = () => {
+    return (
+        <nav className={styles.navbar}>
+            <div className={styles.center}>
+                <a href="https://www.linkedin.com">
+                    <img src="/LinkedIn_logo.svg" alt="LinkedIn Logo" className={styles.linkedin} />
+                </a>
+            </div>
+        </nav>
+    );
 }
+
+export default Navbar;

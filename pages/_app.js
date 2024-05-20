@@ -1,69 +1,13 @@
-import "../styles/globals.css";
-import "@rainbow-me/rainbowkit/styles.css";
-
-import { getDefaultWallets, RainbowKitProvider } from "@rainbow-me/rainbowkit";
-import { configureChains, createClient, useAccount, WagmiConfig } from "wagmi";
-import {
-  mainnet,
-  polygon,
-  optimism,
-  arbitrum,
-  goerli,
-  polygonMumbai,
-  optimismGoerli,
-  arbitrumGoerli,
-} from "wagmi/chains";
-import { alchemyProvider } from "wagmi/providers/alchemy";
-import { publicProvider } from "wagmi/providers/public";
-import MainLayout from "../layout/mainLayout";
-import { useRouter } from "next/router";
-
-const { chains, provider } = configureChains(
-  [
-    mainnet,
-    goerli,
-    polygon,
-    polygonMumbai,
-    optimism,
-    optimismGoerli,
-    arbitrum,
-    arbitrumGoerli,
-  ],
-  [alchemyProvider({ apiKey: process.env.ALCHEMY_API_KEY }), publicProvider()]
-);
-
-const { connectors } = getDefaultWallets({
-  appName: "My Alchemy DApp",
-  chains,
-});
-
-const wagmiClient = createClient({
-  autoConnect: true,
-  connectors,
-  provider,
-});
-
-export { WagmiConfig, RainbowKitProvider };
+import React from 'react';
+import Navbar from '../components/navigation/navbar'; // Adjust the path according to your structure
+import '../styles/globals.css'; // Ensure this path is correct and the file exists
 
 function MyApp({ Component, pageProps }) {
-  const router = useRouter()
-  const account = useAccount({
-    onConnect({ address, connector, isReconnected }) {
-      if (!isReconnected) router.reload();
-    },
-  });
   return (
-    <WagmiConfig client={wagmiClient}>
-      <RainbowKitProvider
-        modalSize="compact"
-        initialChain={process.env.NEXT_PUBLIC_DEFAULT_CHAIN}
-        chains={chains}
-      >
-        <MainLayout>
-          <Component {...pageProps} />
-        </MainLayout>
-      </RainbowKitProvider>
-    </WagmiConfig>
+    <>
+      <Navbar />
+      <Component {...pageProps} />
+    </>
   );
 }
 
