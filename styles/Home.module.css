@@ -12,6 +12,11 @@
 	background-image: url('/bg.png'); /* Ścieżka do obrazka tła */
 	background-size: cover;
 	background-position: center;
+	transition: filter 1s ease;
+  }
+
+  .leftColumn:hover {
+	filter: saturate(0%) contrast(250%);
   }
   
   .rightColumn {
@@ -22,7 +27,6 @@
 	justify-content: center;
 	align-items: flex-start;
 	padding: 20px;
-	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   }
   
   .rightColumn h1  {
@@ -40,3 +44,12 @@
 	font-weight: 400;
   }
   
+.letterContainer {
+  display: inline-block;
+  position: relative;
+}
+
+.enlarge {
+  transform: scale(1.6);
+  transition: transform 0.3s ease;
+}

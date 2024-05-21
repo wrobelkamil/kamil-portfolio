@@ -1,8 +1,5 @@
 .navbar {
-    background-image: url("../public/head.webp"); /* Zmień 'ścieżka/do/tła.jpg' na właściwą ścieżkę do Twojego obrazka */
-    background-size: cover;
-    background-position: center;
-    background-color: black; /* Fallback kolor w przypadku, gdy obrazek nie jest załadowany */
+    background-color: black; /* Domyślny kolor tła */
     color: white;
     display: flex;
     justify-content: space-between;
@@ -13,7 +10,17 @@
     width: 100%;
     z-index: 1000;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+    background-image: url("../public/head.webp"); /* Obrazek domyślnie ukryty */
+    background-size: cover;
+    background-position: 0% -200px; /* Początkowe ustawienie tła */
+    background-repeat: no-repeat;
+    transition: background-position 0.8s ease; /* Dodaj przejście dla płynnego efektu zmiany pozycji tła */
 }
+
+.navbar:hover {
+    background-position: 0% 0%; /* Zmień pozycję tła po najechaniu myszką */
+}
+
 
 
 .center {
@@ -25,4 +32,9 @@
 .linkedin {
     height: 40px;
     filter: drop-shadow(2px 5px 2px rgba(0, 0, 0, 0.5));
+    transition: transform 1s ease; /* Dodaj animację transformacji */
+}
+
+.linkedin:hover {
+    transform: scale(1.4); /* Powiększ element o 10% */
 }
