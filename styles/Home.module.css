@@ -1,5 +1,7 @@
 /* Home.module.css */
 
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
 .heroSection {
 	display: flex;
 	min-height: 100vh;
@@ -25,12 +27,16 @@
   
   .rightColumn h1  {
 	margin: 0;
-	font-family: Consolas, monospace;
+	font-family: Lato, sans-serif;
+	font-style: Bold;
+	font-weight: 900;
 	font-size: 36px;
   }
   .rightColumn p {
 	margin: 20px;
 	margin-left: 0;
-	font-family: Consolas, monospace;
+	font-family: Lato, sans-serif;
+	font-style: Regular;
+	font-weight: 400;
   }
   

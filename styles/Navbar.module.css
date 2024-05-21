@@ -1,5 +1,8 @@
 .navbar {
-    background-color: black;
+    background-image: url("../public/head.webp"); /* Zmień 'ścieżka/do/tła.jpg' na właściwą ścieżkę do Twojego obrazka */
+    background-size: cover;
+    background-position: center;
+    background-color: black; /* Fallback kolor w przypadku, gdy obrazek nie jest załadowany */
     color: white;
     display: flex;
     justify-content: space-between;
@@ -9,7 +12,9 @@
     top: 0;
     width: 100%;
     z-index: 1000;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
 }
+
 
 .center {
     display: flex;
@@ -19,4 +24,5 @@
 
 .linkedin {
     height: 40px;
+    filter: drop-shadow(2px 5px 2px rgba(0, 0, 0, 0.5));
 }
