@@ -3,47 +3,64 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 
 .heroSection {
-	display: flex;
-	min-height: 100vh;
-  }
-  
-  .leftColumn {
-	flex: 1;
-	background-image: url('/bg.png'); /* Ścieżka do obrazka tła */
-	background-size: cover;
-	background-position: center;
-	transition: filter 1s ease;
-  }
+  display: flex;
+  min-height: 100vh;
+  flex-wrap: wrap; /* Allows wrapping on smaller screens */
+  width: 100%; /* Ensure it takes full width */
+}
 
-  .leftColumn:hover {
-	filter: saturate(0%) contrast(250%);
-  }
-  
-  .rightColumn {
-	flex: 1;
-	background-color: white;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: flex-start;
-	padding: 20px;
-  }
-  
-  .rightColumn h1  {
-	margin: 0;
-	font-family: Lato, sans-serif;
-	font-style: Bold;
-	font-weight: 900;
-	font-size: 36px;
-  }
-  .rightColumn p {
-	margin: 20px;
-	margin-left: 0;
-	font-family: Lato, sans-serif;
-	font-style: Regular;
-	font-weight: 400;
-  }
-  
+.leftColumn {
+  flex: 1;
+  background-image: url('/bg.png'); /* Ścieżka do obrazka tła */
+  background-size: cover;
+  background-position: center;
+  transition: filter 1s ease;
+  min-height: 100vh; /* Ensures it takes full height */
+  width: 100%; /* Ensure it takes full width */
+}
+
+.leftColumn:hover {
+  filter: saturate(0%) contrast(250%);
+}
+
+.rightColumn {
+  flex: 1;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 20px;
+  transition: padding 1s ease;
+  width: 100%; /* Ensure it takes full width */
+}
+
+.rightColumn:hover {
+  padding: 80px;
+}
+
+.rightColumn h1 {
+  margin: 0;
+  font-family: Lato, sans-serif;
+  font-style: Bold;
+  font-weight: 900;
+  font-size: 96px;
+}
+
+.textContainer {
+  width: 100%;
+  max-width: 1000px; /* Fixed width for larger screens, but responsive */
+}
+
+.rightColumn p {
+  margin: 20px;
+  margin-left: 0;
+  font-family: Lato, sans-serif;
+  font-style: Regular;
+  font-weight: 400;
+  font-size: 40px;
+}
+
 .letterContainer {
   display: inline-block;
   position: relative;
@@ -52,4 +69,41 @@
 .enlarge {
   transform: scale(1.6);
   transition: transform 0.3s ease;
+}
+
+/* Media queries for responsive design */
+@media (max-width: 768px) {
+  .heroSection {
+    flex-direction: column; /* Stack columns vertically */
+  }
+
+  .leftColumn, .rightColumn {
+    flex: none;
+    width: 100%; /* Ensure they take full width on smaller screens */
+  }
+
+  .textContainer {
+    width: 90%; /* Adjust width for smaller screens */
+    max-width: none;
+  }
+
+  .rightColumn h1 {
+    text-align: center; /* Center align text on smaller screens */
+	font-size: 26px;
+  }
+
+  .rightColumn p {
+    text-align: justify; /* Justify text for better readability */
+	font-size: 16px;
+	margin-top: 5px;
+  }
+
+  /* Disable changes on mobile devices */
+  .leftColumn:hover {
+    filter: none; /* Disable filter change on hover */
+  }
+
+  .rightColumn:hover {
+    padding: 20px; /* Reset padding to default on hover */
+  }
 }

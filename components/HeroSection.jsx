@@ -7,10 +7,12 @@ const HeroSection = () => {
       <div className={styles.leftColumn}></div>
       <div className={styles.rightColumn}>
         <h1>Kamil Wróbel</h1>
-        <p>
-          Jestem grafikiem z pasją do tworzenia. Posiadam umiejętność współpracy z zespołem w kreatywnym procesie tworzenia.
-          Poszukuję stałego rozwoju zawodowego. Jestem komunikatywny i otwarty na naukę, sumiennie wykonuję powierzone mi zadania.
-        </p>
+        <div className={styles.textContainer}>
+          <p>
+            Jestem grafikiem z pasją do tworzenia. Posiadam umiejętność współpracy z zespołem w kreatywnym procesie tworzenia.
+            Poszukuję stałego rozwoju zawodowego. Jestem komunikatywny i otwarty na naukę, sumiennie wykonuję powierzone mi zadania.
+          </p>
+        </div>
       </div>
     </section>
   );
