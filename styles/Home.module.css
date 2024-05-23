@@ -14,7 +14,7 @@
   background-image: url('/bgV.png'); /* Ścieżka do obrazka tła */
   background-size: cover;
   background-position: center;
-  transition: background-image 1s ease;
+  transition: background-image 0.2s ease;
   min-height: 100vh; /* Ensures it takes full height */
   width: 100%; /* Ensure it takes full width */
 }
@@ -44,12 +44,12 @@
   font-family: Lato, sans-serif;
   font-style: Bold;
   font-weight: 900;
-  font-size: 96px;
+  font-size: 48px;
 }
 
 .textContainer {
-  width: 100%;
-  max-width: 1000px; /* Fixed width for larger screens, but responsive */
+  width: 80%;
+  max-width: 600px; /* Fixed width for larger screens, but responsive */
 }
 
 .rightColumn p {
@@ -58,7 +58,7 @@
   font-family: Lato, sans-serif;
   font-style: Regular;
   font-weight: 400;
-  font-size: 40px;
+  font-size: 21px;
 }
 
 .letterContainer {
