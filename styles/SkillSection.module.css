@@ -1,0 +1,42 @@
+.section {
+  padding: 50px 20px;
+  background-color: #F2B807;
+  text-align: center;
+}
+
+.header {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.skillsContainer {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.skillCard {
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 10px;
+  flex: 1 1 30%;
+  max-width: 300px;
+}
+
+.icon {
+  font-size: 3em;
+  margin-bottom: 10px;
+}
+
+.skillTitle {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  color: #444;
+}
+
+.skillDescription {
+  font-size: 1em;
+  color: #666;
+}

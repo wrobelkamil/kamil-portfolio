@@ -11,16 +11,16 @@
 
 .leftColumn {
   flex: 1;
-  background-image: url('/bg.png'); /* Ścieżka do obrazka tła */
+  background-image: url('/bgV.png'); /* Ścieżka do obrazka tła */
   background-size: cover;
   background-position: center;
-  transition: filter 1s ease;
+  transition: background-image 1s ease;
   min-height: 100vh; /* Ensures it takes full height */
   width: 100%; /* Ensure it takes full width */
 }
 
 .leftColumn:hover {
-  filter: saturate(0%) contrast(250%);
+  background-image: url('/bg.png');
 }
 
 .rightColumn {
