@@ -34,7 +34,7 @@ const Gallery = () => {
         items={images}
         additionalClass={styles.imageGalleryThumbnailsWrapper}
         thumbnailClass={styles.imageGalleryThumbnail}
-        thumbnailPosition="left"
+        thumbnailPosition="bottom"
       />
     </div>
   );

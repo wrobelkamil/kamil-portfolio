@@ -30,13 +30,13 @@
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  padding: 20px;
+  padding: 80px;
   transition: padding 1s ease;
   width: 100%; /* Ensure it takes full width */
 }
 
 .rightColumn:hover {
-  padding: 80px;
+  padding: 100px;
 }
 
 .rightColumn h1 {

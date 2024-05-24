@@ -10,18 +10,7 @@
     width: 100%;
     z-index: 1000;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
-    background-image: url("../public/head.webp"); /* Obrazek domyślnie ukryty */
-    background-size: cover;
-    background-position: 0% -300px; /* Początkowe ustawienie tła */
-    background-repeat: no-repeat;
-    transition: background-position 0.8s ease; /* Dodaj przejście dla płynnego efektu zmiany pozycji tła */
 }
-
-.navbar:hover {
-    background-position: 0% 70%; /* Zmień pozycję tła po najechaniu myszką */
-}
-
-
 
 .center {
     display: flex;
