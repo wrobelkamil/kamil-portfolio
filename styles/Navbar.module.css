@@ -2,28 +2,32 @@
     background-color: black; /* Domyślny kolor tła */
     color: white;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
     padding: 10px 20px;
     position: sticky;
     top: 0;
     width: 100%;
     z-index: 1000;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
-}
-
-.center {
+  }
+  
+  .center {
     display: flex;
-    justify-content: center;
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
     width: 100%;
-}
-
-.linkedin {
+    max-width: 1200px; /* Optional: Limit the maximum width for better alignment */
+  }
+  
+  .linkedin {
     height: 40px;
     filter: drop-shadow(2px 5px 2px rgba(0, 0, 0, 0.5));
-    transition: transform 0.5s ease; /* Dodaj animację transformacji */
-}
-
-.linkedin:hover {
-    transform: scale(1.2); /* Powiększ element o 10% */
-}
+    transition: transform 0.5s ease; /* Add transform animation */
+    padding-right: 2.5rem;
+  }
+  
+  .linkedin:hover {
+    transform: scale(1.2); /* Scale element by 20% */
+  }
+  

@@ -20,7 +20,7 @@
 }
 
 .leftColumn:hover {
-  background-image: url('/bg.png');
+  background-image: url('/bg.webp');
 }
 
 .rightColumn {
@@ -29,7 +29,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center; /* Center horizontally */
   padding: 80px;
   transition: padding 1s ease;
   width: 100%; /* Ensure it takes full width */
@@ -85,17 +85,19 @@
   .textContainer {
     width: 90%; /* Adjust width for smaller screens */
     max-width: none;
+    padding-right: 2.5rem;
   }
 
   .rightColumn h1 {
     text-align: center; /* Center align text on smaller screens */
-	font-size: 26px;
+    font-size: 26px;
+    padding-right: 2.5rem;
   }
 
   .rightColumn p {
     text-align: justify; /* Justify text for better readability */
-	font-size: 16px;
-	margin-top: 5px;
+    font-size: 16px;
+    margin-top: 5px;
   }
 
   /* Disable changes on mobile devices */
@@ -105,5 +107,30 @@
 
   .rightColumn:hover {
     padding: 20px; /* Reset padding to default on hover */
+  }
+}
+
+/* Media query for portrait orientation */
+@media (orientation: portrait) {
+  .rightColumn {
+    transition: none; /* Disable transition in portrait mode */
+    align-items: center; /* Center content horizontally */
+    padding: 20px; /* Adjust padding for portrait mode */
+  }
+
+  .rightColumn:hover {
+    padding: 20px; /* Keep original padding in portrait mode */
+  }
+
+  .textContainer {
+    text-align: center; /* Center text */
+    width: 90%; /* Adjust width for better fit */
+    max-width: none; /* Remove max-width constraint */
+  }
+
+  .rightColumn p {
+    text-align: center; /* Center align paragraphs */
+    margin-left: auto; /* Centering adjustment */
+    margin-right: auto; /* Centering adjustment */
   }
 }

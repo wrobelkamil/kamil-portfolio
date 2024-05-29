@@ -7,7 +7,7 @@
 .header {
   font-size: 2.5em;
   margin-bottom: 20px;
-  color: #333;
+  color: #000000;
 }
 
 .skillsContainer {
@@ -23,6 +23,7 @@
   margin: 10px;
   flex: 1 1 30%;
   max-width: 300px;
+  min-width: 260px;
 }
 
 .icon {
@@ -33,10 +34,10 @@
 .skillTitle {
   font-size: 1.5em;
   margin-bottom: 10px;
-  color: #444;
+  color: #000000;
 }
 
 .skillDescription {
   font-size: 1em;
-  color: #666;
+  color: #333;
 }

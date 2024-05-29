@@ -1,0 +1,92 @@
+.contactSection {
+  background-color: #000;
+  padding-bottom: 4.5rem;
+  padding-left: 2.5rem;
+  color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contactContent {
+  display: flex;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.textContent {
+  flex: 1;
+  margin-right: 1rem;
+}
+
+.heading {
+  color: #F2B807;
+  padding-top: 2rem;
+  margin-bottom: 0.5rem;
+  text-align: left;
+  font-size: 1.8rem;
+}
+
+.contactDetails {
+  display: flex;
+  flex-direction: column;
+  gap: 0.1rem;
+  margin-left: 1rem;
+}
+
+.detailItem {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.emoji {
+  font-size: 1.5rem;
+}
+
+.info {
+  color: #fff;
+  font-size: 1.3rem;
+  flex: 1;
+}
+
+.imageBox {
+  flex-basis: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.detailItem:hover .emoji {
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+}
+
+.detailItem:hover .info {
+  color: #F2B807;
+  transition: color 0.3s ease;
+}
+
+@media (max-width: 456px) {
+  .contactContent {
+    flex-direction: column;
+  }
+
+  .textContent {
+    margin-right: 0;
+    margin-bottom: 1rem;
+  }
+
+  .imageBox {
+    width: 100%;
+  }
+}

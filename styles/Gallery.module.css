@@ -1,19 +1,7 @@
-.imageGallery {
-  display: flex;
-}
-
-.imageGalleryThumbnails {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.imageGalleryThumbnail {
-  border: 2px solid transparent;
-}
-
-.imageGalleryThumbnail:hover,
-.imageGalleryThumbnail:focus,
-.imageGalleryThumbnail.active {
-  border: 2px solid #F2B807 !important; /* Kolor obrysu miniatury */
+.header {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 24px;
+  font-weight: bold;
+  /* Dodaj inne style według uznania */
 }
