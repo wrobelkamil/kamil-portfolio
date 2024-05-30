@@ -1,3 +1,22 @@
+.header {
+  font-size: 3rem;
+  margin-left: 5%;
+  position: relative;
+  display: inline-block;
+}
+
+.header::after {
+  content: "";
+  position: absolute;
+  width: 105%;
+  height: 0.6em;
+  background-color: #f2b807;
+  bottom: 0.1em;
+  left: 0;
+  transform: translateX(12%);
+  z-index: -1;
+}
+
 .image-gallery-icon {
     color: #fff;
     transition: all .3s ease-out;
@@ -127,7 +146,7 @@
   }
   
   .image-gallery.fullscreen-modal {
-    background: #000;
+    background: #000000;
     bottom: 0;
     height: 100%;
     left: 0;

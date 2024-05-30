@@ -28,7 +28,7 @@ const Contact = () => {
         </div>
         <div className={styles.imageBox}>
           {/* Replace with your image URL */}
-          <img src="/bg.png" alt="Your description" className={styles.image}/>
+          <img src="/portrait.webp" alt="Your description" className={styles.image}/>
         </div>
       </div>
     </section>
