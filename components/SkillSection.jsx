@@ -14,7 +14,7 @@ const skills = [
   },
   {
     title: "Artificial Intelligence Engineer",
-    description: "Developing AI models and systems using Python, TensorFlow, and PyTorch for various applications including computer vision and natural language processing.",
+    description: "Expert in generating images using various AI tools and possessing foundational skills in training machine learning models.",
     icon: "🤖",
   },
 ];
