@@ -9,7 +9,7 @@ const HeroSection = () => {
         <h1>Kamil Wróbel</h1>
         <div className={styles.textContainer}>
           <p>
-          I am a passionate graphic designer with a keen eye for creativity. I excel in collaborative environments, contributing effectively to the creative process within a team. I am constantly seeking opportunities for professional growth and development. I am communicative, open to learning, and dedicated to completing my tasks with meticulous attention to detail.
+          I'm a passionate graphic designer with a keen eye for creativity. I excel in collaborative environments, contributing effectively to the creative process within a team. I'm constantly seeking opportunities for professional growth and development. I'm communicative, open to learning, and dedicated to completing my tasks with meticulous attention to detail.
           </p>
         </div>
       </div>
